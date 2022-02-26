@@ -8,6 +8,10 @@ $ vagrant up
 $ vagrant ssh default
 vagrant@ubuntu-focal:~$ # labs in here
 ```
+
+## Story(Korean)
+- https://flavono123.github.io/posts/cka-security-context/
+
 ## Ref
 
 ### Vagrant
