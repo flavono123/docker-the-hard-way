@@ -1,5 +1,5 @@
 ---
-- name: Install Docker
+- name: Provision default
   hosts: default
   tasks:
   - name: Set up the repository
@@ -25,12 +25,13 @@
       update_cache: true
     become: yes
 
-  - name: Install Docker Engine and containerd
+  - name: Install Docker Engine, containerd and Docker compose
     apt:
       name:
       - docker-ce
       - docker-ce-cli
       - containerd.io
+      - docker-compose
       state: present
     become: yes
 
