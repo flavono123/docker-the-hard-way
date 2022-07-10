@@ -1,6 +1,8 @@
 ---
 - name: Provision default
-  hosts: default
+  hosts:
+  - node1
+  - node2
   tasks:
   - name: Set up the repository
     apt:
@@ -41,3 +43,11 @@
       groups: docker
       append: true
     become: yes
+
+  - name: Install utilities
+    become: yes
+    apt:
+      state: present
+      name:
+      - bat
+
