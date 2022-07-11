@@ -52,4 +52,5 @@
       - bat
       - net-tools
       - traceroute
+      - jq
 
