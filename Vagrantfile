@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
     node.vm.provider "virtualbox" do |v|
       v.name = 'node1'
       v.cpus = 2
-      v.memory = 4096
+      v.memory = 2048
     end
 
     node.vm.hostname = 'node1'
@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
     node.vm.provider "virtualbox" do |v|
       v.name = 'node2'
       v.cpus = 2
-      v.memory = 4096
+      v.memory = 2048
     end
 
     node.vm.hostname = 'node2'
@@ -38,7 +38,7 @@ Vagrant.configure("2") do |config|
     router.vm.provider "virtualbox" do |v|
       v.name = 'router'
       v.cpus = 2
-      v.memory = 4096
+      v.memory = 1024
     end
 
     router.vm.hostname = 'router'

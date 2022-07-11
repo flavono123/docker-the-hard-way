@@ -50,4 +50,6 @@
       state: present
       name:
       - bat
+      - net-tools
+      - traceroute
 
