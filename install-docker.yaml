@@ -1,8 +1,9 @@
 ---
 - name: Provision default
   hosts:
-  - node1
-  - node2
+  - mgr-1
+  - wkr-1
+  - wkr-2
   tasks:
   - name: Set up the repository
     apt:
